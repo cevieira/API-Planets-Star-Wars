@@ -18,8 +18,9 @@ Terreno
  
 # Configuração
 - A linguagem utilizada neste projeto é Javascript utilizando o framework NodeJs com banco de dados NoSQL MongoDB, utilizando Express, Mongoose, Axios e Body Parser. Foi utilizado o Nodemon para auxiliar o desenvolvimento
-- É necessário ter o MongoDB (https://www.mongodb.com/) instalado e rodando, para correta execução da aplicação, deverá ser criado uma nova collection e substituir a connectionString do arquivo /bin/server.js pela connectionstring da nova collection.
-- É necessário ter uma conexão com internet para o funcionamento correto da aplicação, pois há integração com a API pública do Star Wars: https://swapi.co/
+- A aplicação foi disponibilizada no Heroku, para auxiliar nos testes: https://planetsstarwars.herokuapp.com/planets
+- É necessário ter uma conexão com internet para o funcionamento correto da aplicação, pois há integração com a API pública do Star Wars: https://swapi.co/.
+- Foi utilizado o Postman para os testes durante o desenvolvimento.
  
 # Funcionamento da Aplicação
 
