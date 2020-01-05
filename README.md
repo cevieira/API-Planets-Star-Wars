@@ -24,9 +24,8 @@ Terreno
  
 # Funcionamento da Aplicação
 
-- Na primeira inicialização da aplicação,  a base de dados estara zerada
 - A API conta com as seguintes funcionalidades para o usuário:
-º Adicionar um planeta, com nome, clima e terreno, não sendo permitido adicionar planetas com nomes repetidos, ao adicionar um planeta, é feita uma busca na API pública do Star Wars (https://swapi.co/), para verificar a quantidade de aparições em filmes do planeta que está sendo inserido.
+º Adicionar um planeta, com nome, clima e terreno, não sendo permitido adicionar planetas com nomes repetidos e adicionar manualmente o número de filmes do planeta, ao adicionar um planeta, é feita uma busca na API pública do Star Wars (https://swapi.co/), para verificar a quantidade de aparições em filmes do planeta que está sendo inserido. e a
 º Listar todos os planetas cadastrados na base de dados
 º Buscar um planeta pelo seu nome
 º Buscar um planeta pelo seu ID
