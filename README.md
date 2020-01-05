@@ -18,7 +18,7 @@ Terreno
  
 # Configuração
 - A linguagem utilizada neste projeto é Javascript utilizando o framework NodeJs com banco de dados NoSQL MongoDB, utilizando Express, Mongoose, Axios e Body Parser. Foi utilizado o Nodemon para auxiliar o desenvolvimento
-- É necessário ter o MongoDB (https://www.mongodb.com/) instalado e rodando, para correta execução da aplicação.
+- É necessário ter o MongoDB (https://www.mongodb.com/) instalado e rodando, para correta execução da aplicação, deverá ser criado uma nova collection e substituir a connectionString do arquivo /bin/server.js pela connectionstring da nova collection.
 - É necessário ter uma conexão com internet para o funcionamento correto da aplicação, pois há integração com a API pública do Star Wars: https://swapi.co/
  
 # Funcionamento da Aplicação
@@ -30,6 +30,7 @@ Terreno
 º Buscar um planeta pelo seu nome
 º Buscar um planeta pelo seu ID
 º Remover um planeta pelo seu ID
+
 # Como fazer as requisições para a API
 
 1. Adicionar um planeta
