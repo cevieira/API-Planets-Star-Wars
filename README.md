@@ -42,23 +42,24 @@ Terreno
 
 2- Listar todos os planetas cadastrados
 - Tipo de Request que deve ser utilizado: GET
-- Caminho a ser utilizado: /planets/
+- Essa busca contém paginação e limite de registros por pagina, o default são 10 registros por pagina, exemplo de como utilizar a paginação: https://planetsstarwars.herokuapp.com/planets=?page=2&limit=5
+- Caminho a ser utilizado: https://planetsstarwars.herokuapp.com/planets/
 
 3- Buscar um planeta pelo seu nome
 - Tipo de Request que deve ser utilizado: GET
-- Caminho a ser utilizado: /planets/name/
+- Caminho a ser utilizado: https://planetsstarwars.herokuapp.com/planets/name/
 - Exemplo de uso:
-º/planeta/name/Tatooine
+ºhttps://planetsstarwars.herokuapp.com/planets/name/Tatooine
 
 4- Buscar um planeta pelo seu ID
 -Tipo de Request que deve ser utilizado: GET
-- Caminho a ser utilizado: /planets/
+- Caminho a ser utilizado: https://planetsstarwars.herokuapp.com/planets/
 - Exemplo de uso:
-º /planeta/7a01816g1612dd33c9fe3a0v
+º https://planetsstarwars.herokuapp.com/planets/7a01816g1612dd33c9fe3a0v
 
 5- Remover planeta pelo ID
 - Tipo de Request que deve ser utilizado: DELETE
-- Caminho a ser utilizado: /planets/
+- Caminho a ser utilizado: https://planetsstarwars.herokuapp.com/planets/
 - Exemplo de uso:
-º /planeta/7a01816g1612dd33c9fe3a0v
+º https://planetsstarwars.herokuapp.com/planets/7a01816g1612dd33c9fe3a0v
 
