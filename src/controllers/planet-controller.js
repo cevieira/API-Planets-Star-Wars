@@ -6,6 +6,12 @@ const swapi = require('../services/swapi-service');
 const repository = require('../repository/planet-repository');
 
 exports.post = async (req, res, next) => {
+
+    if (req.body.numberOfMovies) {
+        res.status(400).send({
+            message: 'O campo numberOfMovies somente é preenchido utilizando a API do Swapi, não é possivel cadastrar um planeta utilizando este campo na requisição.'
+        })
+    }
     const data = await swapi(req.body);
 
     let planet = new Planet(data);
@@ -13,7 +19,7 @@ exports.post = async (req, res, next) => {
         .save()
         .then(x => {
             res.status(201).send({
-                message: 'o Planeta com o id ' + x._id + ' foi cadastrado com sucesso!'
+                message: 'O Planeta foi cadastrado com sucesso e recebeu o id ' + x._id
             })
         }).catch(e => {
             defaultError(res, e);
@@ -35,9 +41,14 @@ exports.delete = (req, res, next) => {
 
 exports.get = (req, res, next) => {
     repository
-        .get()
+        .get(req)
         .then(data => {
-            res.status(200).send(data)
+            res.status(200).send({
+                planets: data.docs,
+                page: data.page,
+                pages: data.pages,
+                total: data.total
+            })
         }).catch(e => {
             defaultError(res, e);
         });
@@ -55,7 +66,7 @@ exports.getById = (req, res, next) => {
 
 exports.getByName = (req, res, next) => {
     repository
-        .getByName({ name: req.params.name })
+        .getByName(req.params.name)
         .then(data => {
             res.status(200).send(data)
         }).catch(e => {

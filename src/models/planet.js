@@ -1,15 +1,15 @@
 'use strict';
 
 const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate');
 const Schema = mongoose.Schema;
 
-const schema = new Schema({
+const PlanetSchema = new Schema({
     name: {
         type: String,
         required: [true, 'O nome do planeta é obrigatório.'],
         index: true,
         unique: true
-
     },
     climate: {
         type: String,
@@ -28,6 +28,9 @@ const schema = new Schema({
     versionKey: false
 });
 
-module.exports = mongoose.model('Planet', schema);
+PlanetSchema.plugin(mongoosePaginate);
+
+
+module.exports = mongoose.model('Planet', PlanetSchema);
 
 
