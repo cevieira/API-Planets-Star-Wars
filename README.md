@@ -34,29 +34,29 @@ Terreno
 
 1. Adicionar um planeta
 - Tipo de Request que deve ser utilizado: POST
-- Caminho a ser utilizado: /planeta/
+- Caminho a ser utilizado: /planets/
 - Exemplo de Body Request:
 º {"name": "Tatooine", "climate": "Árido", "terrain" "Deserto"}
 
 2- Listar todos os planetas cadastrados
 - Tipo de Request que deve ser utilizado: GET
-- Caminho a ser utilizado: /planeta/
+- Caminho a ser utilizado: /planets/
 
 3- Buscar um planeta pelo seu nome
 - Tipo de Request que deve ser utilizado: GET
-- Caminho a ser utilizado: /planeta/name/
+- Caminho a ser utilizado: /planets/name/
 - Exemplo de uso:
 º/planeta/name/Tatooine
 
 4- Buscar um planeta pelo seu ID
 -Tipo de Request que deve ser utilizado: GET
-- Caminho a ser utilizado: /planeta/
+- Caminho a ser utilizado: /planets/
 - Exemplo de uso:
 º /planeta/7a01816g1612dd33c9fe3a0v
 
 5- Remover planeta pelo ID
 - Tipo de Request que deve ser utilizado: DELETE
-- Caminho a ser utilizado: /planeta/
+- Caminho a ser utilizado: /planets/
 - Exemplo de uso:
 º /planeta/7a01816g1612dd33c9fe3a0v
 
